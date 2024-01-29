@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/440c1741b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div id="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span> Rajat </span> <br>Shelar from Satara</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about------------ -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/backgrounddd.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    About Me<Menu></Menu>
+                </h1>
+                <p>I am a final-year Computer Science and Engineering student with a strong passion for Java development. Proficient in MySQL database management and currently expanding my skills in web development. Eager to apply my knowledge to create innovative and efficient solutions in the ever-evolving tech landscape.</p> <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                --> <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Developer</span><br>Java Programming</li>
+                    <li><span>Web Development</span><br>Developing web applications</li>
+                    <li><span>Mysql</span><br>Managing DataBase through Mysql</li>
+                </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Developer</span><br>Java Programming</li>
+                    <li><span>Web Development</span><br>Developing web applications</li>
+                    <li><span>Mysql</span><br>Managing DataBase through Mysql</li>
+                </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>10th (SSC)</span><br>Kranti Vidyalay Sawali,Jawali,Satara,Maharashtra. (2018)</li>
+                    <li><span>12th (HSC)</span><br>Yashvantrao Chavan Institute of Science Satara. (2020)</li>
+                    <li><span>B.Tech (Computer Science & Engineering)</span><br>Karmaveer Bhaurao Patil College of Engineering Satara. (2024)</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">
+            My Services<Menu></Menu>
+        </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                    I am a skilled web developer proficient in HTML, CSS, JavaScript, and MySQL. I honed my expertise through Dr. Angela Yu's Udemy course and self-guided learning on YouTube. Excited about crafting innovative, responsive web applications with a solid foundation in these technologies.    
+                </p>
+                <a href="https://github.com/Rajatshelar">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Development</h2>
+                <p>
+                   
+                    I've become adept in Java through Physics Wallah's PWSkills. Skilled in using Java's capabilities, I'm enthusiastic about creating powerful and efficient software solutions. My knowledge combines theoretical understanding with hands-on expertise to tackle diverse programming challenges.</p>
+                <a href="https://github.com/Rajatshelar">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Mysql</h2>
+                <p>
+                   
+                    I've acquired proficiency in MySQL database management through self-learning and practical experience. Skilled in designing and optimizing databases, I bring a strong foundation in SQL. Excited to apply these skills to create efficient and organized data solutions.</p>
+                <a href="https://github.com/Rajatshelar">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/noise-detector.jpg" alt="">
+                <div class="layer">
+                    <h3>Noise Detector for silence Zone.(IOT Project)</h3>
+                    <p>
+                       I have made an IoT-based system using Arduino to detect and manage noise levels. The system autonomously identifies noise and notifies individuals to maintain a quieter environment. Additionally, it offers flexibility by allowing adjustment of the threshold frequency to accommodate varying crowd sizes.   
+                    </p>
+                    <a href="https://github.com/Rajatshelar/Mentor-Mentee-Portal-project-.git">Code</a>
+                    <a href="http://www.youtube.com/@rajatshelar">Video</a>
+                   <!--  <a href="#"><i><i class="fa-solid fa-link"></i> <a href="#">Video</a></i></a>
+               -->  </div>
+            </div>
+            <div class="work">
+                <img src="images/mentor-mentee.jpg" alt="">
+                <div class="layer">
+                    <h3>Mentor Mentee Portal.(Web Development Project)</h3>
+                    <p>
+                       I have made a website using HTML, CSS, JavaScript, PHP, and MySQL, facilitating seamless interaction among teachers, students, and parents. Teachers have exclusive login access to manage student data, schedule meetings, and engage with parents. The portal empowers parents to monitor their child's progress and communicate with teachers for enhanced collaboration in the educational journey.
+
+                    </p>
+                    <a href="https://github.com/Rajatshelar/Mentor-Mentee-Portal-project-.git">Code</a>
+                    <a href="http://www.youtube.com/@rajatshelar">Video</a>
+                   <!--  <a href="#"><i><i class="fa-solid fa-link"></i> <a href="#">Video</a></i></a>
+                 --></div>
+            </div>
+            <div class="work">
+                <img src="images/chatbot-img.jpg" alt="">
+                <div class="layer">
+                    <h3>ChatBot for college.       (In progress..)</h3>
+                    <p>
+                        I'm actively engaged in a Web Development project creating a user-friendly college chatbot using HTML, CSS, JavaScript, and Python. Incorporating Natural Language Processing (NLP) and voice features, the chatbot not only answers questions but also learns from user interactions. Committed to enhancing information and give seamless and interactive experience for users. The project is expected to be completed by next month.    
+                    </p>
+                    <a href="https://github.com/Rajatshelar">Code</a>
+                   <!--  <a href="#"><i><i class="fa-solid fa-link"></i> <a href="#">Video</a></i></a>
+               -->  </div>
+            </div>
+        </div>
+        <a href="https://github.com/Rajatshelar"class="btn" >See more</a>
+    </div>
+</div>
+
+<!-- --------------contact------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajatshelar5@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8767748796</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Rajatshelar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajat-shelar-547189237/"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="images/RAJAT RESUME jan.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+           Copyright © Rajat. Made with <i class="fa-solid fa-heart"></i> by Rajat Shelar 
+        </p>
+    </div>
+</div>
+
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+           
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxdOMYJMM3h_vHIpORARy7Zc1STezpyzfbdsXC6GfYPeTuNgowawCZp5UX6Flx6kPazSQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+            {
+                msg.innerHTML= "Message sent successfully! Thankyou."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
