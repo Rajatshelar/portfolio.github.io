@@ -406,8 +406,14 @@ nav .fa-solid{
         flex-basis: 40%;
     }
     .about-col-1{
-        margin-bottom: 30px;
-        flex-basis: 40%;
+       /* margin-bottom: 30px;
+        flex-basis: 50%;
+         */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh; /* Optional: Set the height to 100% of the viewport height for full-page centering */
+       
     }
     .about-col-2{
         font-size: 14px;
